@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*  10px */
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Poppins";
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4ebf5;
+}
+
+/*      
+
+
+======================
+
+components
+
+======================
+
+
+
+*/
+
+.shadow_inset {
+  border-radius: 50px;
+  background: #e4ebf5;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
+    inset -0.2rem -0.2rem 0.5rem #fff;
+}
+
+/* 
+
+
+======================
+
+      App Css
+
+======================
+
+
+
+
+*/
+
+.wrraper {
+  width: 40rem;
+  height: 70rem;
+  padding: 4rem 2rem;
+  border-radius: 5rem;
+  background: #e4ebf5;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
+}
+.img-wrraper {
+  width: 70px;
+  height: 70px;
+  padding: 15px;
+  margin: 6.4rem auto;
+}
+
+.img {
+  width: 100%;
+}
+
+.form_input {
+  margin-bottom: 3.2rem;
+}
+.form_input,
+input,
+.button {
+  height: 4rem;
+  border: none;
+}
+.form_input input {
+  width: 100%;
+  background-color: transparent;
+  padding-left: 1.3rem;
+}
+input:focus-visible {
+  outline: 0;
+  border: none;
+}
+
+.button {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3.2rem;
+  border-radius: 5rem;
+  background: linear-gradient(to right, #66a1ff, #2f6dce);
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
+  color: #fff;
+  cursor: pointer;
+  background-size: 400% 400%;
+  animation: Animatbg 3s ease infinite;
+}
+@keyframes Animatbg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

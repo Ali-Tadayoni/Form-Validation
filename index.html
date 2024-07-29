@@ -4,28 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/app.css" />
   </head>
   <body>
     <div class="wrraper">
-      <div class="img">
-        <img src="images/user.webp" alt="user" />
+      <div class="img-wrraper shadow_inset">
+        <img class="img" src="images/user.webp" alt="user" />
       </div>
-      <form action="/">
-        <div>
+      <form action="/" class="form">
+        <div class="form_input shadow_inset">
           <input id="username" type="text" placeholder="Username" />
           <span class="message"></span>
         </div>
-        <div>
-          <input id="username" type="email" placeholder="Ema" />
+        <div class="form_input shadow_inset">
+          <input id="emai" type="email" placeholder="Email" />
           <span class="message"></span>
         </div>
-        <div>
-          <input id="username" type="password" placeholder="Password" />
+        <div class="form_input shadow_inset">
+          <input id="password" type="password" placeholder="Password" />
           <span class="message"></span>
         </div>
-        <div>
-          <input id="username" type="password" placeholder="Password" />
+        <div class="form_input shadow_inset">
+          <input id="password-confirm" type="password" placeholder="Password" />
           <span class="message"></span>
         </div>
         <button class="button" type="submit">Sign Up</button>

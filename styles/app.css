@@ -72,10 +72,17 @@ components
 }
 
 .form_input {
-  margin-bottom: 3.2rem;
+  margin-bottom: 4rem;
+  transition: all 250ms ease-in;
+}
+input {
+  height: 4rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 5rem;
+  font-family: "Poppins Medium";
+  color: #3f3f46;
 }
 .form_input,
-input,
 .button {
   height: 4rem;
   border: none;
@@ -115,4 +122,19 @@ input:focus-visible {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.form_input.success input {
+  border-color: #22c55e;
+}
+.form_input.error input {
+  border-color: #ef4444;
+}
+
+.message {
+  display: inline-block;
+
+  padding-left: 1.3rem;
+  padding-top: 0.7rem;
+  color: #ef4444;
 }
